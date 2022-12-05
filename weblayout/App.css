@@ -1,0 +1,410 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* img{
+  box-sizing: border-box;
+  object-fit: cover;
+} */
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.d_flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify_contant{
+  justify-content: space-between;
+}
+.spacer{
+  margin: 80px 0px;
+}
+.spacer_top{
+  margin-top: 80px;
+}
+.container{
+  max-width: 1180px !important;
+  margin: 0px auto !important;
+  padding: 0px 20px;
+}
+.flex{
+  display: flex;
+}
+.text_center{
+  text-align: center;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+}
+.text_justify{
+  text-align: justify;
+}
+.bg_gray{
+  background-color: var(--gray);
+}
+:root{
+  --yellow:#ffc91d;
+  --blue:#003366;
+  --gray:#F7F7F7;
+}
+/* --------------------Top Header Start-------------- */
+.top_header{
+  background-color: #003366;
+  padding:12px;
+}
+.top_header p{
+  font-size: 16px;
+}
+.top_header p i{
+  margin: 0px 15px;
+  font-size: 16px;
+}
+.icon i:first-child{
+  margin-left: 0px;
+}
+.icon a:last-child{
+  margin-left: 15px;
+}
+.icon a:hover,.soc_icon a:hover{
+  color: var(--yellow);
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  color: white;
+}
+.soc_icon a{
+  margin: 0px 5px;
+  font-size: 14px;
+}
+/* ========Start Navigatin Bar========= */
+.logo{
+  align-items: center;
+}
+.logo img{
+  height: 70px;
+  width: 225px;
+}
+nav{
+  display: inline-block;
+  background-color: white;
+  font-weight: bold;
+  font-size: 13px;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+
+}
+.main_menu li{
+  display: inline-block;
+  position: relative; 
+}
+.main_menu li a{
+  display: block;
+  padding: 35px 10px;
+  color: black;
+  transition: .4s;
+}
+.main_menu li:hover >a{
+  color: #ffc91d;
+}
+.sub_menu li{
+  display: block;
+}
+.sub_menu{
+position: absolute; 
+top:100%; 
+left: 0; 
+width: 150px;
+display: none;
+background-color: skyblue;
+width: 200px;
+}
+.peta_menu{
+  position:absolute ;
+  top: 0%;
+  left: 100%;
+  width: 150px;
+  background-color: antiquewhite;
+  display: none;
+}
+.sub_menu li:hover > a{
+  background-color: blue;
+}
+.main_menu li:hover .sub_menu,
+.sub_menu li:hover .peta_menu{
+  display: block;
+}
+nav ul a.active{
+  color: var(--yellow);
+}
+/* ---------------End Navigation bar--------------------------- */
+/* --------------slider image---------------- */
+.slider_img img{
+  width: 100%;
+}
+/* ------------------START CREATIVE COURSE----------------- */
+.sec_title{
+  font-size: 14px;
+  color: #000;
+  /* line-height: 43px; */
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 0px;
+  position: relative;
+}
+.sec_title::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  width: 20%;
+  border: 1px var(--yellow)  solid ;
+}
+.cource_video{
+margin-top: 20px;
+}
+.cource_box video{
+  height: 230px;
+  width: 350px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cource_title{
+  padding: 15px 0px 15px 10px;
+}
+.cource_box{
+  height: 355px;
+  /* width: 380px; */
+  box-shadow: 1px 1px 2px gray;
+  margin-top: 40px;
+  border-radius: 10px;
+  transition: .4s;
+}
+.cource_box:hover{
+  box-shadow: 5px 5px 20px gray;
+}
+.cource_title h2{
+  font-size: 22px;
+}
+.cource_title a{
+  color: black;
+  font-weight: 200px;
+  transition: .3s;
+}
+.cource_title a:hover{
+  color: var(--yellow);
+}
+hr{
+  color: gray;
+}
+.star_img{
+  color: var(--yellow);
+  margin-left: 15px;
+}
+.star_img i{
+  margin-right: 10px;
+  font-size: 12px;
+}
+.btn{
+  padding: 10px 20px;
+  background-color: #003366;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 13px 0px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.btn_all{
+  padding: 16px 30px;
+  background-color: #ffbc07;
+  border: none;
+  color:white;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+/* ------------------CREATIVE COURSE End----------------- */
+/* ------------------Start About Us----------------- */
+.about{
+  height: 463px;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+  border-radius: 0px 250px 250px 0px;
+  z-index:2;
+  margin-right: -50px;
+  padding: 50px 70px;
+  background-color: white;
+}
+.about h4{
+  word-spacing: 8px;
+}
+.about_img img{
+  height: 360px;
+  width: 502px;
+}
+.text{
+  margin: 20px 0px;
+  text-transform: capitalize;
+  line-height: 22px;
+  color: gray ;
+  text-align: justify;
+}
+.margin_10{
+  margin-left: 20px;
+}
+.counter img{
+  width: 100%;
+  height: 250px;
+}
+.count_icon img{
+  width: 60px;
+  height: 60px;
+}
+.count_icon{
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.counter{
+  position: relative;
+
+}
+.counter::after{
+  content: "";
+  height: 250px;
+  width: 100%;
+  opacity: .7;
+  background-color: #003366;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.counter_set{
+  background-image: url('./images/counter-icon.png');
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+}
+.counter_set1{
+  background-image: url('./images/counter-icon.png');
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+  background-position: 0px -70px;
+}
+.counter_set2{
+  background-image: url('./images/counter-icon.png');
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+  background-position: 0px -138px;
+}
+.counter_set3{
+  background-image: url('./images/counter-icon.png');
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+  background-position: 0px 65px;
+}
+.counter_img{
+  margin-right: 100px;
+}
+/* ---------------------Happy Student Start---------- */
+.student{
+  width: 100%;
+  margin-right: 100px;
+}
+.student .sec_title{
+  margin-left: 35px;
+}
+.student h1{
+  letter-spacing: 2px;
+}
+.quote i{
+  color: #ebebeb;
+  font-size: 100px;
+}
+.mar_top{
+  margin-top: 40px;
+}
+.prev_next .bt{
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  box-shadow:  0px 0px 10px rgb(0 0 0 / 20%);
+  padding-top: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.prev_next div:first-child{
+  margin-right: 10px;
+}
+.student_img img{
+  height: 484px;
+  width: 475px;
+  margin-right: 0;
+}
+.student_img{
+  position: relative;
+
+}
+.student_img img:last-child{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* .game_dev{
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+} */
+.game_dev img{
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+}
+.dev_data{
+  margin-left: 20px;
+}
+.dev_data h3{
+  color: var(--blue);
+}
+.dev_data p{
+  color: var(--yellow);
+  font-style: italic;
+}
+.dev_data p i{
+  color: gray;
+  margin-left: 5px;
+}
+/* ---------------------Happy Student End---------- */
+/* ---------------------See our Difference---------------- */
+.read_title{
+  text-align: center;
+  padding-top: 50px;
+}
+.read{
+  height: 300px;
+  width: calc(33.33% - 40px);
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.read_our{
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
